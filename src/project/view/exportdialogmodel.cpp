@@ -95,7 +95,8 @@ ExportDialogModel::ExportDialogModel(QObject* parent)
                                      qtrc("project/export", "MusicXML")),
         ExportType::makeWithSuffixes({ "brf" },
                                      qtrc("project/export", "Braille"),
-                                     qtrc("project/export", "Braille files"))
+                                     qtrc("project/export", "Braille files"),
+                                     "BrailleSettingsPage.qml")
     };
 
     m_selectedExportType = m_exportTypeList.front();
